@@ -1,28 +1,106 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Mono&display=swap');
 
-:root{
+:root {
     --cor-principal: #889C9B;
 }
-*{
+
+* {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
-html, body{
+
+html,
+body {
     font-family: 'Noto Sans Mono', monospace;
 }
+
 /* Header */
-header{
+header {
     background-color: var(--cor-principal);
 }
-header .Container. img{
-    height:80px ; 
+
+header .container img {
+    height: 80px;
 }
-header .container{
+
+header .container {
     display: flex;
     align-items: center;
     justify-content: space-between;
     max-width: 980px;
-    height: 80px;
+    height: 86px;
     margin: auto;
 }
+
+header nav ul {
+    list-style: none;
+    display: flex;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.596);
+    text-transform: uppercase;
+    font-size: 18px;
+    padding: 24px;
+    transition: all 250ms linear 0s;
+}
+
+header nav ul li a:hover {
+    background-color: rgb(145, 184, 185);
+}
+
+
+/* Main */
+main {
+    margin-bottom: 100px;
+}
+
+main .container-main {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 980px;
+    margin: 100px auto 0px auto;
+}
+
+main .container-main h2 {
+    color: rgba(0, 0, 0, 0.884);
+    font-size: 45px;
+    font-weight: bold;
+}
+
+main .container-main img {
+    height: 500px;
+    width: 650px;
+}
+
+form {
+    margin-top: 20px;
+}
+
+form input {
+    width: 380px;
+    padding-left: 15px;
+    font-size: 18px;
+    height: 45px;
+    margin-bottom: 13px;
+    border-radius: 20px;
+    border: 2px solid var(--cor-principal);
+}
+
+form[type="submit"] {
+    background-color: var(--cor-principal);
+    color: white;
+}
+
+form[type="submit"]:hover {
+    cursor: pointer;
+    background-color: #255
+}
+
+main .container-main img {
+    width: 600px;
+}
+
