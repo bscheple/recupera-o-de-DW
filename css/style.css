@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap');
 
 :root {
     --cor-principal: #889C9B;
@@ -97,7 +98,7 @@ form [type="submit"] {
     padding-left: 0;
     background-color: var(--cor-principal);
     color: white;
-  background-color: var(--cor-principal);
+    background-color: var(--cor-principal);
 }
 
 form [type="submit"]:hover {
@@ -109,36 +110,46 @@ main .container-main img {
     width: 600px;
 }
 
- /* Cards */
- .cards {
+/* Cards */
+.cards {
     width: 90%;
     max-width: 980px;
     margin: auto;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     grid-gap: 20px;
- }
- .card {
+    font-style: italic;
+}
+
+.card {
     display: flex;
     flex-direction: column;
     cursor: pointer;
     box-shadow: 5px 5px 15px -4px black;
-    transition: all 0,3s ease 0s;
- }
- .card:hover {
+    transition: all 0, 3s ease 0s;
+}
+
+.card:hover {
     transform: translateY(-7px);
- }
- .image {
+}
+
+.image {
     width: 100%;
     padding-top: 56.25%;
     overflow: hidden;
     position: relative;
- }
- .image img {
+}
+
+.image img {
     position: absolute;
     border-radius: 10px;
     height: 100%;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
- }
+}
+h1 {
+    font-family: 'EB Garamond', serif;
+    color:  rgb(120, 150, 151);
+    text-shadow: 0 0 2px rgb(69, 121, 134);
+}
