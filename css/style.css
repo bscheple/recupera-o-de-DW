@@ -13,6 +13,7 @@
 html,
 body {
     font-family: 'Noto Sans Mono', monospace;
+    text-align: center;
 }
 
 /* Header */
@@ -21,14 +22,14 @@ header {
 }
 
 header .container img {
-    height: 80px;
+    height: 230px;
 }
 
 header .container {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    max-width: 980px;
+    max-width: 1176px;
     height: 86px;
     margin: auto;
 }
@@ -55,6 +56,7 @@ header nav ul li a:hover {
 /* Main */
 main {
     margin-bottom: 100px;
+    color: rgb(255, 255, 255, 0.596);
 }
 
 main .container-main {
@@ -88,19 +90,55 @@ form input {
     margin-bottom: 13px;
     border-radius: 20px;
     border: 2px solid var(--cor-principal);
+    background-color: white;
 }
 
-form[type="submit"] {
+form [type="submit"] {
+    padding-left: 0;
     background-color: var(--cor-principal);
     color: white;
+  background-color: var(--cor-principal);
 }
 
-form[type="submit"]:hover {
+form [type="submit"]:hover {
     cursor: pointer;
-    background-color: #255
+    background-color: rgb(120, 150, 151);
 }
 
 main .container-main img {
     width: 600px;
 }
 
+ /* Cards */
+ .cards {
+    width: 90%;
+    max-width: 980px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 20px;
+ }
+ .card {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    box-shadow: 5px 5px 15px -4px black;
+    transition: all 0,3s ease 0s;
+ }
+ .card:hover {
+    transform: translateY(-7px);
+ }
+ .image {
+    width: 100%;
+    padding-top: 56.25%;
+    overflow: hidden;
+    position: relative;
+ }
+ .image img {
+    position: absolute;
+    border-radius: 10px;
+    height: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+ }
